@@ -1,12 +1,17 @@
 ﻿using System;
 
-namespace bai1
+namespace MyApplication
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Enter your name: ");
+            string myString = Console.ReadLine();
+            int charPos = myString.IndexOf("a");
+            string name = myString.Substring(charPos);
+            Console.WriteLine(name);
         }
     }
 }
+
